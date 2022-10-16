@@ -1,6 +1,19 @@
-const mainText = document.querySelector(".main-text");
-const additionalText = document.querySelector(".additional-text");
+const mainText = document.querySelectorAll(".main-text");
+mainText.forEach(function(question){
 
-mainText.addEventListener("click", ()=>{
-    additionalText.classList.toggle("hidden");
+    question.addEventListener("click", function(){
+        question.parentNode.classList.toggle("active")
+       
+    })
 })
+
+
+// toto cele je funkcne kdyby neco:
+// const mainText = document.querySelectorAll(".main-text");
+// mainText.forEach(function(question){
+
+//     question.addEventListener("click", function(){
+//         question.parentNode.classList.toggle("active")
+       
+//     })
+// })

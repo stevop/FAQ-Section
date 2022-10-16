@@ -9,7 +9,6 @@ section{
     margin-bottom: .5rem;
     width: 100%;
     position: relative;
-    border: red 1px solid;
 
     p{
         margin-bottom: 1rem;
@@ -30,9 +29,10 @@ section:last-of-type{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
 
-    cursor: pointer;;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
 }
 
 .main-text:hover{
@@ -41,13 +41,12 @@ section:last-of-type{
 }
 
 // JAVASCRIPT CLASSES
-.hidden{
+
+.section > .additional-text{
     display: none;
 }
 
-.additional-text{
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-
+.section.active > .additional-text{
+    display: block;
+    width: 100%;
 }
