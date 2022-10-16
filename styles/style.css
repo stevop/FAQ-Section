@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --blue: hsl(238, 29%, 16%);
+  --red: hsl(14, 88%, 65%);
+  --divider: hsl(240, 5%, 91%);
+  --font: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  color: var(--blue);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+section {
+  border-bottom: solid 1px var(--divider);
+  margin-bottom: 0.5rem;
+  width: 100%;
+  position: relative;
+  border: red 1px solid;
+}
+section p {
+  margin-bottom: 1rem;
+  line-height: 1.625;
+}
+
+section:first-of-type {
+  margin-top: 2rem;
+}
+
+section:last-of-type {
+  border: none;
+  margin: 0;
+}
+
+.main-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+
+.main-text:hover {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 12px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, hsl(240deg, 73%, 65%), hsl(273deg, 75%, 66%));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.woman-mobile {
+  position: absolute;
+  top: -110px;
+  width: 14.625rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

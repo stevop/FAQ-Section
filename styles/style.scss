@@ -1,0 +1,47 @@
+@import "partials/variables";
+@import "partials/sections";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+    font-size: 12px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(0deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.woman-mobile{
+    position: absolute;
+    top: -110px; //mozno upravit na rem
+    width: 14.625rem;
+}
+
+// ATTRIBUTION
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
