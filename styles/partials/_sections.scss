@@ -42,11 +42,15 @@ section:last-of-type{
 
 // JAVASCRIPT CLASSES
 
-.section > .additional-text{
-    display: none;
-}
+// .section > .additional-text{
+//     display: none;
+// }
 
-.section.active > .additional-text{
-    display: block;
-    width: 100%;
+// .section.active > .additional-text{
+//     display: block;
+//     width: 100%;
+// }
+
+.hidden{
+    display: none;
 }

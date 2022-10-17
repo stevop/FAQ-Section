@@ -1,19 +1,19 @@
 const mainText = document.querySelectorAll(".main-text");
-mainText.forEach(function(question){
+const additionalText = document.querySelectorAll(".additional-text");
 
+//tu sa vsetkym additionalText prida class .hidden
+const hideText = additionalText.forEach(answer => {
+    answer.classList.add("hidden")
+})
+
+// tu sa na kliknutie togglne class hidden:
+const toggleText = mainText.forEach(question => {
     question.addEventListener("click", function(){
-        question.parentNode.classList.toggle("active")
-       
+        question.nextElementSibling.classList.toggle("hidden")
+
+    
     })
 })
 
 
-// toto cele je funkcne kdyby neco:
-// const mainText = document.querySelectorAll(".main-text");
-// mainText.forEach(function(question){
-
-//     question.addEventListener("click", function(){
-//         question.parentNode.classList.toggle("active")
-       
-//     })
-// })
+//teraz treba aby som ostatnym pridal hidden ak nejaky odoberiem

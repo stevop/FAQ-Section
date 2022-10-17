@@ -46,13 +46,8 @@ section:last-of-type {
   font-weight: 700;
 }
 
-.section > .additional-text {
+.hidden {
   display: none;
-}
-
-.section.active > .additional-text {
-  display: block;
-  width: 100%;
 }
 
 * {
