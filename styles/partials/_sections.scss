@@ -2,13 +2,49 @@ h1{
     color: var(--blue);
     font-size: 2.25rem;
     font-weight: 700;
+    text-align: center;
+}
+
+// IMAGES
+.woman-image{
+    position: absolute;
+    top: -110px; //mozno upravit na rem
+    width: 14.625rem;
+
+    @media only screen and (min-width: 1440px){
+        left: -8%;
+        top: 5%;
+        width: 25rem;
+    }
+}
+.bg-image{
+    @media only screen and (min-width: 1440px){
+        display: none;
+    }
+}
+
+// TEXTS
+.faq-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    @media only screen and (min-width: 1440px){
+        
+    }
 }
 
 section{
     border-bottom: solid 1px var(--divider);
+    font-size: 1.2em;
     margin-bottom: .5rem;
-    width: 100%;
     position: relative;
+    width: 100%;
+
+    @media only screen and (min-width: 1440px){
+        
+    }
 
     p{
         margin-bottom: 1rem;

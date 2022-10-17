@@ -10,13 +10,40 @@ h1 {
   color: var(--blue);
   font-size: 2.25rem;
   font-weight: 700;
+  text-align: center;
 }
 
+.woman-image {
+  position: absolute;
+  top: -110px;
+  width: 14.625rem;
+}
+@media only screen and (min-width: 1440px) {
+  .woman-image {
+    left: -8%;
+    top: 5%;
+    width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bg-image {
+    display: none;
+  }
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
 section {
   border-bottom: solid 1px var(--divider);
+  font-size: 1.2em;
   margin-bottom: 0.5rem;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 section p {
   margin-bottom: 1rem;
@@ -80,6 +107,7 @@ body {
   font-family: var(--font);
   font-size: 12px;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +115,7 @@ body {
   background: linear-gradient(0deg, hsl(240deg, 73%, 65%), hsl(273deg, 75%, 66%));
 }
 
-.container {
+.container-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,11 +129,15 @@ body {
   padding: 2rem;
   position: relative;
 }
-
-.woman-mobile {
-  position: absolute;
-  top: -110px;
-  width: 14.625rem;
+@media only screen and (min-width: 1440px) {
+  .container-box {
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
 
 .attribution {
